@@ -1,0 +1,5 @@
+DELETE FROM DELIVERY
+WHERE DRUG_ID IN (	SELECT ID 
+					FROM DRUG
+					WHERE NAME = 'Fentanyl'
+				)
